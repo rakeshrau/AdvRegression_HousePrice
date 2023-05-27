@@ -1,52 +1,53 @@
-# Project Name
-> Outline a brief description of your project.
+# Advanced Regression-House Price Prediction
 
+## Business Objective:
+A US-based housing company called Surprise Housing has decided to enter the Australian market. The company wants to purchase houses at a price below their actual values and sell them on at a higher price. The company has collected a data set from the sale of houses in Australia.It is looking at prospective properties to buy to enter the market. We are required to build a regression model using regularisation in order to predict the actual value of the prospective properties and decide whether to invest in them or not.The company wants to know:
 
+  1.Which variables are significant in predicting the price of a house and how well those variables describe the price of a house.
+  2.We have to determine the optimal value of lambda for ridge and lasso regression.
+ 
 ## Table of Contents
-* [General Info](#general-information)
-* [Technologies Used](#technologies-used)
-* [Conclusions](#conclusions)
-* [Acknowledgements](#acknowledgements)
+* [Dataset](#Dataset)
+* [Technologies](#Technologies)
+* [Conclusions](#Conclusions)
+* [Contributors](#Contributors)
 
-<!-- You can include any other section that is pertinent to your problem -->
 
-## General Information
-- Provide general information about your project here.
-- What is the background of your project?
-- What is the business probem that your project is trying to solve?
-- What is the dataset that is being used?
+## Dataset
+- 'train.csv' dataset is used.It is dataset from the sale of houses in Australia. 
 
-<!-- You don't have to answer all the questions - just the ones relevant to your project. -->
+## Technologies
+- Python-3.7.3
+- Pandas-0.24.2
+- Numpy-1.16.4
+- Matplotlib-3.1.0
+- Seaborn-0.9.0
+- Scikit-learn-0.21.2
 
 ## Conclusions
-- Conclusion 1 from the analysis
-- Conclusion 2 from the analysis
-- Conclusion 3 from the analysis
-- Conclusion 4 from the analysis
+- The optimal value of lambda for Ridge=20, Lasso=500.
+- Top Features as per Ridge Regression are:
+            1.MSSubClass
+            2.Neighborhood_NridgHt
+            3.Neighborhood_OldTown
+            4.OverallCond
+            5.BsmtFullBath
+            6.BsmtExposure_Mn
+            7.Exterior1st_AsphShn
+            8.Neighborhood_Edwards
+            9.LowQualFinSF
+            10.Condition1_PosA
+- Top Features as per Lasso Regression are:
+            1.MSSubClass
+            2.Neighborhood_NridgHt
+            3.BsmtFullBath
+            4.Neighborhood_OldTown
+            5.OverallCond
+            6.BsmtExposure_Mn
+            7.Condition1_PosA
+            8.GarageArea
+            9.Neighborhood_Edwards
+            10.YearRemodAdd
 
-<!-- You don't have to answer all the questions - just the ones relevant to your project. -->
-
-
-## Technologies Used
-- library - version 1.0
-- library - version 2.0
-- library - version 3.0
-
-<!-- As the libraries versions keep on changing, it is recommended to mention the version of library used in this project -->
-
-## Acknowledgements
-Give credit here.
-- This project was inspired by...
-- References if any...
-- This project was based on [this tutorial](https://www.example.com).
-
-
-## Contact
-Created by [@githubusername] - feel free to contact me!
-
-
-<!-- Optional -->
-<!-- ## License -->
-<!-- This project is open source and available under the [... License](). -->
-
-<!-- You don't have to include all sections - just the one's relevant to your project -->
+## Contributors
+Created by [@rakeshrau] - Rakesh Raushan
